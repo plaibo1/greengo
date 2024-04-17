@@ -1,0 +1,43 @@
+
+
+.line {
+    width: 3px;
+    height: 50px;
+    background: linear-gradient(#7C72FF, #2DA44E 80%, #3FB950);
+
+    &.lineStart {
+        background: linear-gradient(transparent, #7C72FF 30%);
+    }
+    &.lineEnd {
+        background: linear-gradient(rgb(63, 185, 80), rgb(46, 160, 67), transparent);
+    }
+}
+
+.circle {
+    @apply text-black;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-bg {
+        width: 70%;
+        height: 70%;
+        background-color: #7c72ff;
+        filter: blur(18px);
+        position: absolute;
+    }
+    &.secondary &-bg {
+        background-color: #3fb950;
+    }
+
+    & svg {
+        display: inline-block;
+        overflow: visible !important;
+        vertical-align: text-bottom;
+        fill: currentColor;
+        z-index: 2;
+    }
+}
