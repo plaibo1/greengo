@@ -3,6 +3,7 @@
 import React from "react";
 import { Logo } from "../Common/Logo";
 import { BaseFormDialog } from "../BaseFormDialog/BaseFormDialog";
+import { Configurator } from "../Configurator/Configurator";
 
 const Hero = () => {
   return (
@@ -26,6 +27,8 @@ const Hero = () => {
             <h4 className="mb-8 text-lg font-medium text-black dark:text-white">
               🔥 Аккумуляторы и запчасти - напрямую от производителя
             </h4>
+
+            <Configurator />
           </div>
 
           <div className="flex justify-center gap-4">
